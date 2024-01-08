@@ -97,7 +97,7 @@ def main():
         except:
             pass
     print('devices:', DEVICES)
-    trainer = pl.Trainer(max_epochs=3, accelerator="auto", devices=DEVICES, )
+    trainer = pl.Trainer(max_epochs=1, accelerator="auto", devices=DEVICES, )
     trainer.fit(summarization_model)
 
 
